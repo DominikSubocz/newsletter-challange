@@ -29,27 +29,53 @@ body{
     border-radius: 25px;
     padding: 10px;
     width: 50vw;
-    height: 35vw;
+    height: auto;
   }
   .grid-item {
     padding: 20px;
     font-size: 30px;
     text-align: center;
   }
-
-  .panel-left >h1{
-    font-size:3.5vw;
+  .panel-right{
+    padding:0;
+    margin:0;
+    border-radius: 0;
   }
 
-  .panel-left > p,span{
-    font-size: 1vw;
+  .panel-left{
     font-family:Arial, Helvetica, sans-serif;
     text-align: left;
   }
 
 
+  ul{
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+
+  }
+
+ li{
+  background-image: url(../assets/images/icon-list.svg);
+  background-repeat:no-repeat;
+  background-position: left;
+  background-size:1.5vw;
+  padding-left:2vw;
+  margin: 1.5vw 0;
+ }
+
+  .panel-left >h1{
+    font-size:3.5vw;
+  }
+
+  .panel-left > p,span,ul{
+    font-size: 1vw;
+
+  }
+
+
 
   .img-banner{
-    width:20vw;
+    width:22vw;
     height: auto;
   }
