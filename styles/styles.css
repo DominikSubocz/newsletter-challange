@@ -1,6 +1,15 @@
+
+
 body{
     background-color: hsl(234, 29%, 20%);
+    text-align: left;
+    font-family: Roboto;
 }
+p,span,li{
+  font-size: 1.1vw;
+}
+
+
 
 .outer {
     display: table;
@@ -36,10 +45,6 @@ body{
     padding-right:10px;
   }
 
-  .panel-left{
-    font-family:Arial, Helvetica, sans-serif;
-    text-align: left;
-  }
 
 
   ul{
@@ -53,7 +58,7 @@ body{
   background-image: url(../assets/images/icon-list.svg);
   background-repeat:no-repeat;
   background-position: left;
-  background-size:1.5vw;
+  background-size:1.2vw;
   padding-left:2vw;
   margin: 1.5vw 0;
  }
@@ -62,14 +67,46 @@ body{
     font-size:3.5vw;
   }
 
-  .panel-left > p,span,ul{
-    font-size: 1vw;
-
-  }
-
-
 
   .img-banner{
     width:23vw;
     height: auto;
+  }
+
+
+  form,#em-box{
+    font-size: 0.9vw;
+  }
+
+  form{
+    margin-left:2vw;
+  }
+
+  
+  input[type=text], select {
+    width: 90%;
+    height: 3vw;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: left;
+
+  }
+  #title-label,input[type=submit]{
+    font-weight: 700;
+  }
+ 
+  
+  input[type=submit] {
+    width: 90%;
+    background-color: hsl(234, 29%, 20%);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
   }
