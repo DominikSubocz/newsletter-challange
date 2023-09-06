@@ -5,10 +5,14 @@ body{
     text-align: left;
     font-family: Roboto;
 }
-p,span,li{
-  font-size: 1.1vw;
+p,li, input[type=submit]{
+  font-size: 0.9vw;
 }
 
+h1{
+  font-size:3vw;
+  margin-bottom:0;
+}
 
 
 .outer {
@@ -30,6 +34,7 @@ p,span,li{
     width: 100vw;
     /* Whatever width you want */
   }
+
   .grid-container {
     display: grid;
     margin: 0 auto;
@@ -38,14 +43,16 @@ p,span,li{
     border-radius: 25px;
     padding: 10px;
     width: 50vw;
-    height: auto;
+    height: 33vw;
   }
   .panel-right{
     border-radius: 0;
     padding-right:10px;
   }
-
-
+  .panel-left{
+    padding: 0 3vw;
+    padding-top:2vw;
+  }
 
   ul{
     text-decoration: none;
@@ -63,34 +70,29 @@ p,span,li{
   margin: 1.5vw 0;
  }
 
-  .panel-left >h1{
-    font-size:3.5vw;
-  }
+
 
 
   .img-banner{
-    width:23vw;
+    width:22vw;
     height: auto;
   }
 
 
   form,#em-box{
-    font-size: 0.9vw;
+    font-size: 0.8vw;
   }
 
-  form{
-    margin-left:2vw;
-  }
 
   
   input[type=text], select {
-    width: 90%;
+    width: 100%;
     height: 3vw;
-    padding: 12px 20px;
-    margin: 8px 0;
+    padding: 1vw 2vw;
+    margin: 1vw 0;
     display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    border: 1.5px solid hsl(234, 29%, 20%);;
+    border-radius: 6px;
     box-sizing: border-box;
     text-align: left;
 
@@ -98,15 +100,22 @@ p,span,li{
   #title-label,input[type=submit]{
     font-weight: 700;
   }
- 
-  
+
+
   input[type=submit] {
-    width: 90%;
+    width: 100%;
     background-color: hsl(234, 29%, 20%);
     color: white;
-    padding: 14px 20px;
+    padding: 1.2vw 1vw;
+    padding-bottom:0.8vw;
     margin: 8px 0;
     border: none;
-    border-radius: 4px;
+    border-radius: 6px;
     cursor: pointer;
   }
+
+  input[type=submit]:hover{
+    background-image: linear-gradient(to right, hsl(4, 100%, 67%),hsl(24, 100%, 64%));
+  }
+
+ 
