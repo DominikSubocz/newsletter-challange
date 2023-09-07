@@ -14,8 +14,8 @@ h1{
   margin-bottom:0;
 }
 
-
-.outer {
+@media only screen and (min-width: 600px) {
+  .outer {
     display: table;
     position: absolute;
     top: 0;
@@ -71,6 +71,9 @@ h1{
  }
 
 
+ .mobile-img{
+  display:none;
+ }
 
 
   .img-banner{
@@ -117,5 +120,120 @@ h1{
   input[type=submit]:hover{
     background-image: linear-gradient(to right, hsl(4, 100%, 67%),hsl(24, 100%, 64%));
   }
+
+}
+
+@media only screen and (min-width:375px) and (max-width: 600px) {
+
+  body, html{
+    margin:0;
+    background-color: #fff;
+  }
+
+  h1{
+    font-size:8vw;
+  }
+
+  p,li,form,#em-box,input[type=submit]{
+    font-size: 3vw;
+  }
+
+   .outer {
+    width: 100%;
+  }
+  
+  .middle {
+    width: 100%;
+  }
+  
+  .inner {
+    margin: 0 auto;
+    padding:0;
+    width: 100%;
+    /* Whatever width you want */
+  }
+
+  .grid-container{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  ul{
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    width: 57vw;
+
+  }
+
+  li{
+    background-image: url(../assets/images/icon-list.svg);
+    background-repeat:no-repeat;
+    background-position: left;
+    background-size:4vw;
+    padding-left:7vw;
+    padding-top:1vw;
+    margin: 1.5vw 0;
+  }
+
+  .panel-left{
+    width: 75vw;
+    margin:0 auto;
+  }
+
+  .panel-right{
+    height: 80vw;
+  }
+
+  .desktop-img{
+    display: none;
+  }
+
+  .img-banner{
+    width: 100vw;
+    height: auto;
+  }
+
+
+
+
+  
+  input[type=text], select {
+    width: 100%;
+    height: 10vw;
+    padding: 5vw 8vw;
+    margin: 1vw 0;
+    display: inline-block;
+    border: 1.5px solid hsl(234, 29%, 20%);;
+    border-radius: 6px;
+    box-sizing: border-box;
+    text-align: left;
+
+  }
+  #title-label,input[type=submit]{
+    font-weight: 700;
+  }
+
+
+  input[type=submit] {
+    width: 100%;
+    height: 10vw;
+    background-color: hsl(234, 29%, 20%);
+    color: white;
+    padding: 1.2vw 1vw;
+    padding-bottom:0.8vw;
+    margin: 8px 0;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
+  input[type=submit]:hover{
+    background-image: linear-gradient(to right, hsl(4, 100%, 67%),hsl(24, 100%, 64%));
+  }
+
+}
+
+
 
  
