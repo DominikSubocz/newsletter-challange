@@ -14,6 +14,7 @@ h1{
   margin-bottom:0;
 }
 
+
 @media only screen and (min-width: 600px) {
   .outer {
     display: table;
@@ -65,23 +66,15 @@ h1{
   .list{
     text-decoration: none;
     list-style: none;
-    padding: 0;
-    margin:0;
+    padding-left:0;
+    margin-bottom:1.9vw;
 
   }
 
-  .text-list > li{
-    margin:1.9vw 0;
-  }
-
-  .icon-list > li > .list-icon{
-    width: 1.35vw;
-    height: auto;
-  }
-
-  .icon-list > li{
-    margin:1.5vw 0;
-    padding-right:1vw;
+  .list > .list-icon{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5vw;;
   }
 
  .mobile-img{
@@ -144,11 +137,11 @@ h1{
   }
 
   h1{
-    font-size:8vw;
+    font-size:9.5vw;
   }
 
   p,li,form,#em-box,input[type=submit]{
-    font-size: 3vw;
+    font-size: 4vw;
   }
 
    .outer {
@@ -171,16 +164,26 @@ h1{
     flex-direction: column-reverse;
   }
 
-.list-container{
-  width: 57vw;
-}
+  .list-container {
+    width: 80vw; /* Adjust this width as needed for mobile */
+    margin-bottom: 5vw; /* Adjust the margin between list items for mobile */
+  }
 
-  .list{
+  .list {
+    display: inline-block;
     text-decoration: none;
     list-style: none;
-    padding: 0;
-
+    padding-left: 0;
+    margin-bottom: 5vw; /* Adjust the margin between list items for mobile */
   }
+
+
+  .list-icon {
+    vertical-align: middle;
+    margin-right: 20vw; /* Adjust this margin as needed for desktop */
+  }
+  /* ... (other existing CSS rules) */
+
 
 
 
@@ -199,6 +202,7 @@ h1{
 
   .img-banner{
     width: 100vw;
+    
     height: auto;
   }
 
