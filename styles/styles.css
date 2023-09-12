@@ -139,7 +139,7 @@ h1{
   }
 
   h1{
-    font-size:2rem;
+    font-size:2.5rem;
   }
 
   p,li,form,#em-box,input[type=submit]{
@@ -168,7 +168,7 @@ h1{
   .item-container{
     display: flex;
     flex-direction: row;
-    padding: 0.5rem 0;
+    padding: 1vw 0;
 
   }
 
@@ -182,13 +182,13 @@ h1{
   }
 
   .list-icon{
-    width: 5vw;
+    width: 4vw;
     height: auto;
-    padding: 0 2rem 1rem 0;
+    padding: 0 1vw 1vw 0;
   }
 
   .panel-left{
-    width: 75%;
+    width: 90%;
     margin:0 5vw;
   }
 
@@ -198,7 +198,7 @@ h1{
 
   .img-banner{
     width: 100%;
-    height: 70%;
+    height: 60vw;
     object-fit: cover;
     border-radius: 0 0 25px 25px;
   }
@@ -207,7 +207,7 @@ h1{
   
   input[type=text], select {
     width: 100%;
-    height: 13vw;
+    height: 8vw;
     padding: 2vw 8vw;
     margin: 2vw 0;
     display: inline-block;
@@ -229,7 +229,7 @@ h1{
 
   input[type=submit] {
     width: 100%;
-    height: 14vw;
+    height: 8vw;
     background-color: hsl(234, 29%, 20%);
     color: white;
     padding: 1.2vw 1vw;
