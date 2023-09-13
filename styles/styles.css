@@ -6,6 +6,13 @@ body{
     font-family: Roboto;
 }
 
+.success-panel{
+  display: block;
+}
+
+.panel-left{display: none;}
+.panel-right{display: none;}
+
 
 @media only screen and (min-width:1201px){
   p,li, input[type=submit],input[type=text]{
@@ -126,6 +133,11 @@ body{
 
   input[type=submit]:hover{
     background-image: linear-gradient(to right, hsl(4, 100%, 67%),hsl(24, 100%, 64%));
+  }
+
+  .success-msg-container{
+    display: flex;
+    flex-direction: column;
   }
 
 }
