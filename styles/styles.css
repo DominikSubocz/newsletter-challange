@@ -6,10 +6,17 @@ body{
     font-family: Roboto;
 }
 
-.success-page{
+.submit-page{
   display: none;
+  background-color: #fff;
   flex-direction: column;
 }
+
+#error-label{
+  display: none;
+  color:hsl(4, 100%, 67%)
+}
+
 
 /*.panel-left{display: none;}
 .panel-right{display: none;}*/
@@ -100,8 +107,11 @@ body{
     margin-top:3vw;
   }
 
-  #title-label{
+  #title-label,#error-label{
     font-size: 1vw;
+  }
+  #error-label{
+    margin-left:15vw;
   }
 
   
@@ -139,8 +149,11 @@ body{
     background-image: linear-gradient(to right, hsl(4, 100%, 67%),hsl(24, 100%, 64%));
   }
 
-  .success-page{
-    padding:2.5vw;
+  .submit-page{
+    width: 28%;
+    margin:0 auto;
+    border-radius: 25px;
+    padding:5vw;
   }
 
   h2{
@@ -148,12 +161,12 @@ body{
     margin: 3vw 0 1vw 0
   }
 
-  .success-img{
-    width: 4vw;
+  .success-icon{
+    width: 6vw;
     height: auto;
   }
 
-  .success-page  > p{
+  .submit-page  > p{
     font-size:1vw;
     line-height: 1.5vw;
   }
@@ -256,9 +269,14 @@ body{
     margin-top:3vw;
   }
 
-  #title-label{
+  #title-label,#error-label{
     font-size: 1.2vw;
   }
+
+  #error-label{
+    margin-left:10vw;
+  }
+
 
   
   input[type=text], select {
@@ -295,8 +313,11 @@ body{
     background-image: linear-gradient(to right, hsl(4, 100%, 67%),hsl(24, 100%, 64%));
   }
 
-  .success-page{
-    padding:2.5vw;
+  .submit-page{
+    width: 32%;
+    margin:0 auto;
+    border-radius: 25px;
+    padding:5vw;
   }
 
   h2{
@@ -304,12 +325,12 @@ body{
     margin: 3vw 0 1vw 0
   }
 
-  .success-img{
+  .success-icon{
     width: 6vw;
     height: auto;
   }
 
-  .success-page  > p{
+  .submit-page  > p{
     font-size:1.3vw;
     line-height: 1.8vw;
   }
@@ -326,7 +347,7 @@ body{
     border-radius: 6px;
     cursor: pointer;
     font-weight: bold;
-    font-size:1vw;
+    font-size:1.5vw;
   }
 
 }
@@ -413,9 +434,14 @@ body{
     margin-top:3.5vw;
   }
 
-  #title-label{
+  #title-label,#error-label{
     font-size: 1.5vw;
   }
+
+  #error-label{
+    margin-left:15vw;
+  }
+
 
   
   input[type=text], select {
@@ -453,8 +479,11 @@ body{
   }
 
 
-  .success-page{
-    padding:2.5vw;
+  .submit-page{
+    width: 32%;
+    margin:0 auto;
+    border-radius: 25px;
+    padding:5vw;
   }
 
   h2{
@@ -462,12 +491,12 @@ body{
     margin: 3vw 0 1vw 0
   }
 
-  .success-img{
+  .success-icon{
     width: 7vw;
     height: auto;
   }
 
-  .success-page  > p{
+  .submit-page  > p{
     font-size:1.5vw;
     line-height: 2vw;
   }
@@ -565,7 +594,7 @@ body{
   
   input[type=text], select {
     width: 100%;
-    height: 8vw;
+    height: 10vw;
     padding: 2vw 8vw;
     margin: 2vw 0;
     display: inline-block;
@@ -580,14 +609,19 @@ body{
     font-weight: 700;
   }
 
-  #title-label{
-    font-size:0.8rem;
+  #title-label,#error-label{
+    font-size:3vw;
   }
+
+  #error-label{
+    margin-left:40vw;
+  }
+
 
 
   input[type=submit] {
     width: 100%;
-    height: 8vw;
+    height: 10vw;
     background-color: hsl(234, 29%, 20%);
     color: white;
     padding: 1.2vw 1vw;
@@ -603,8 +637,11 @@ body{
   }
 
 
-  .success-page{
-    padding:12vw;
+  .submit-page{
+    width: 70%;
+    margin:10vw auto;
+    border-radius: 25px;
+    padding:5vw;
   }
 
   h2{
@@ -612,12 +649,12 @@ body{
     margin: 3vw 0 1vw 0
   }
 
-  .success-img{
+  .success-icon{
     width: 12vw;
     height: auto;
   }
 
-  .success-page > div > p{
+  .submit-page > div > p{
     font-size:3.5vw;
     line-height: 5vw;
   }
@@ -719,7 +756,7 @@ body{
   
   input[type=text], select {
     width: 100%;
-    height: 8vw;
+    height: 10vw;
     padding: 2vw 8vw;
     margin: 2vw 0;
     display: inline-block;
@@ -734,14 +771,19 @@ body{
     font-weight: 700;
   }
 
-  #title-label{
+  #title-label,#error-label{
     font-size:2.5vw;
   }
+
+  #error-label{
+    margin-left:45vw;
+  }
+
 
 
   input[type=submit] {
     width: 100%;
-    height: 8vw;
+    height: 10vw;
     background-color: hsl(234, 29%, 20%);
     color: white;
     padding: 1.2vw 1vw;
@@ -756,8 +798,11 @@ body{
     background-image: linear-gradient(to right, hsl(4, 100%, 67%),hsl(24, 100%, 64%));
   }
 
-  .success-page{
-    padding:12vw;
+  .submit-page{
+    width: 70%;
+    margin:25vw auto;
+    border-radius: 25px;
+    padding:5vw;
   }
 
   h2{
@@ -765,12 +810,12 @@ body{
     margin: 3vw 0 1vw 0
   }
 
-  .success-img{
+  .success-icon{
     width: 12vw;
     height: auto;
   }
 
-  .success-page > div > p{
+  .submit-page > div > p{
     font-size:3.5vw;
     line-height: 5vw;
   }
@@ -887,9 +932,14 @@ body{
     font-weight: 700;
   }
 
-  #title-label{
+  #title-label,#error-label{
     font-size:3vw;
   }
+
+  #error-label{
+    margin-left:30vw;
+  }
+
 
 
   input[type=submit] {
@@ -907,6 +957,46 @@ body{
 
   input[type=submit]:hover{
     background-image: linear-gradient(to right, hsl(4, 100%, 67%),hsl(24, 100%, 64%));
+  }
+
+  .submit-page{
+    width: 70%;
+    margin:25vw auto;
+    border-radius: 25px;
+    padding:5vw;
+  }
+
+  h2{
+    font-size:8vw;
+    margin: 3vw 0 1vw 0
+  }
+
+  .success-icon{
+    width: 12vw;
+    height: auto;
+  }
+
+  .submit-page > div > p{
+    font-size:3.5vw;
+    line-height: 5vw;
+  }
+
+  .btn-container{
+    margin-top:50vw;
+  }
+  .dismiss-btn{
+    width: 100%;
+    height: 10vw;
+    background-color: hsl(234, 29%, 20%);
+    color: white;
+    padding: 1.2vw 1vw;
+    padding-bottom:0.8vw;
+    margin: 8px 0;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size:3vw;
   }
 
 }

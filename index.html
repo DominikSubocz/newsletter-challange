@@ -30,7 +30,7 @@
 
 
         <div id="grid-container"class="grid-container">
-          <div id="grid-item1" class="grid-item panel-left">
+          <div class="grid-item panel-left">
             <!-- Sign-up form start -->
 
             <h1>Stay updated!</h1>
@@ -61,7 +61,8 @@
 
               <form name="newsltr-form"class="email-form" onsubmit="event.preventDefault(); return submitForm()" method="post">
                 <label type="title" id="title-label"for="em-box">Email address</label>
-                <input type="text" id="em-box" name="emailbox" placeholder="email@company.com">
+                <label type="title" id="error-label" for="em-box">Valid email required</label>
+                <input type="text" id="em-box" name="emailbox" onmouseleave="mouseUp()" placeholder="email@company.com">
                 
                 <input type="submit" value="Subscribe to monthly newsletter">
 
@@ -70,19 +71,20 @@
 
             <!-- Sign-up form end -->
         </div>
-        <div id="grid-item2"class="grid-item panel-right">
+        <div class="grid-item panel-right">
 
             <img class="img-banner desktop-img" src="assets/images/illustration-sign-up-desktop.svg">
             <div>
               <img class="img-banner mobile-img" src="assets/images/illustration-sign-up-mobile.svg"></div>
 
           </div>
+        </div>
 
-          <div id="submit-page"class="success-page">
+          <div id="submit-page"class="submit-page">
             <!-- Success message start -->
 
             <div>
-              <img class="success-img" src="assets/images/icon-success.svg">
+              <img class="success-icon" src="assets/images/icon-success.svg">
             </div>
   
             <div>
@@ -94,14 +96,14 @@
             </div>
   
             <div class="btn-container">
-              <button class="dismiss-btn">Dismiss message</button>
+              <form>              
+                <input type="submit" class="dismiss-btn" value="Dismiss message">
+              </form>
+
             </div>
   
             <!-- Success message end -->
-      </div>
-
         </div>
-
 
 
 
