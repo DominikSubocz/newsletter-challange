@@ -41,26 +41,16 @@ function submitForm() {
          passed successfully.
 
     */
-
-
-    else if (x!==""){
-        if(validRegex.test(x)){                     //Tests if 'x' which contains value from 'emailbox' contains any symbol from the regex list.
-            
-          document.getElementById("grid.item").style.display = "none";
-          document.getElementById("success-page").style.display = "flex";
-          document.getElementById("grid.container").style.width = "40%";
-          return false;
-
-          //set width to 40%
-        }
         else{
-            alert("Email is invalid! Please enter a valid Email address!")
-            return false;                           // Email is invalid, user needs to try again, form is not submitted.
+          document.getElementById("grid-item1").style.display = "none";
+          document.getElementById("grid-item2").style.display = "none";
+          document.getElementById("submit-page").style.display = "flex";
+          document.getElementById("grid-container").style.width = "40%";
+
         }
+        return true;
     }
 
-
-  }
 
 
 
