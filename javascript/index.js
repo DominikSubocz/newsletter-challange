@@ -45,8 +45,13 @@ function submitForm() {
 
     else if (x!==""){
         if(validRegex.test(x)){                     //Tests if 'x' which contains value from 'emailbox' contains any symbol from the regex list.
-            return true;                            // Email is valid and form is submitted.
-        
+            
+          document.getElementById("grid.item").style.display = "none";
+          document.getElementById("success-page").style.display = "flex";
+          document.getElementById("grid.container").style.width = "40%";
+          return false;
+
+          //set width to 40%
         }
         else{
             alert("Email is invalid! Please enter a valid Email address!")
