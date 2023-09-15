@@ -3,7 +3,7 @@
 body{
     background-color: hsl(234, 29%, 20%);
     text-align: left;
-    font-family: Roboto;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 
 .submit-page{
