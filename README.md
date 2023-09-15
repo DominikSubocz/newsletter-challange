@@ -21,4 +21,7 @@ Code needs to be more clean, no messy bits, a straight forward layout.
 
 
 ## Thinks to Keep in Mind for the Next Time 🧠
+Be consistent with design and code (Avoid having duplicate & messy code)
+Try to match design as closely as you can.
+
 
